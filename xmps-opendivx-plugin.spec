@@ -32,7 +32,7 @@ Wtyczka OpenDivX dla odtwarzacza XMPS.
 
 %build
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure \
 	--enable-static=no
