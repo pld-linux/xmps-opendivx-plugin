@@ -5,7 +5,7 @@ Version:	0.0.2
 Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	http://download.projectmayo.com/dnload/divx4linux/xmps/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	240fd72b9a2e1c5171dd01c528ca4c77
 URL:		http://www.projectmayo.com/
 Requires:	xmps
