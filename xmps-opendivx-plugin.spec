@@ -32,7 +32,7 @@ Wtyczka OpenDivX dla odtwarzacza XMPS.
 %build
 %configure \
 	--enable-static=no
-%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g} $(glib-config --cflags)"
+%{__make} CFLAGS="%{rpmcflags} $(glib-config --cflags)"
 
 %install
 rm -rf $RPM_BUILD_ROOT
