@@ -33,7 +33,7 @@ Wtyczka OpenDivX dla odtwarzacza XMPS.
 %build
 libtoolize --copy --force
 aclocal
-autoconf
+%{__autoconf}
 %configure \
 	--enable-static=no
 %{__make} CFLAGS="%{rpmcflags} $(glib-config --cflags)"
