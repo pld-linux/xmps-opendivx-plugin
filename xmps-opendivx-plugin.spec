@@ -2,7 +2,7 @@ Summary:	OpenDivX plugin for XMPS
 Summary(pl):	Wtyczka OpenDivX dla odtwarzacza XMPS
 Name:		xmps-opendivx-plugin
 Version:	0.0.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
@@ -30,6 +30,9 @@ Wtyczka OpenDivX dla odtwarzacza XMPS.
 %setup  -q
 
 %build
+libtoolize --copy --force
+aclocal
+autoconf
 %configure \
 	--enable-static=no
 %{__make} CFLAGS="%{rpmcflags} $(glib-config --cflags)"
