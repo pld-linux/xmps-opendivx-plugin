@@ -14,6 +14,7 @@ BuildRequires:	libdivxdecore-devel
 BuildRequires:	xmps-devel >= 0.2.0
 BuildRequires:	libstdc++-devel
 BuildRequires:	mawk
+BuildRequires:	glib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -31,8 +32,7 @@ Wtyczka OpenDivX dla odtwarzacza XMPS.
 %build
 %configure \
 	--enable-static=no
-
-%{__make}
+%{__make} CFLAGS="$CFLAGS $(glib-config --cflags)"
 
 %install
 rm -rf $RPM_BUILD_ROOT
