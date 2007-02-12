@@ -1,5 +1,5 @@
 Summary:	OpenDivX plugin for XMPS
-Summary(pl):	Wtyczka OpenDivX dla odtwarzacza XMPS
+Summary(pl.UTF-8):   Wtyczka OpenDivX dla odtwarzacza XMPS
 Name:		xmps-opendivx-plugin
 Version:	0.0.2
 Release:	2
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 OpenDivX plugin for XMPS (X Multimedia Player System).
 
-%description -l pl
+%description -l pl.UTF-8
 Wtyczka OpenDivX dla odtwarzacza XMPS.
 
 %prep
